@@ -1,27 +1,28 @@
 <?php
 
 class Product{
-    public $name;
-    public $startPrice;
-    public $amount;
+    public string $name;
+    public float $startPrice;
+    public int $amount;
     public function __construct(string $name, float $startPrice, int $amount){
-    $this->name = $name;
-    $this->startPrice = $startPrice;
-    $this->amount = $amount;
+        $this->name = $name;
+        $this->startPrice = $startPrice;
+        $this->amount = $amount;
+    }
+    public function printProducts($object)
+    {
+        $fruits = new Product('Banana', 1.2, 20);
+        echo $object->name . ', price ' . $object->startPrice . ', ' . $object->amount . ' units';
+    }
+    public function changeAmount($object, $amount){
+        $object->amount = $amount;
+    }
+    public function changePrice($object, $price){
+        $object->startPrice = $price;
     }
 }
 
-function printProducts($object)
-{
-    $fruits = new Product('Banana', 1.2, 20);
-    echo $object->name . ', price ' . $object->startPrice . ', ' . $object->amount . ' units';
-}
-function changeAmount($object, $amount){
-    $object->amount = $amount;
-}
-function changePrice($object, $price){
-    $object->startPrice = $price;
-}
+
 
 $device1 = new Product('Logitech mouse', 70.00, 14);
 $device2 = new Product('iPhone 5s', 999.99, 3);
@@ -38,40 +39,43 @@ echo "To change price [6] for {$device3->name} {$device3->startPrice} EURO {$dev
 echo 'To exit [7]' . PHP_EOL;
 while (true){
     $input = readline();
+    if ($input !== range(1, 7)){
+        echo "Error Wrong selection.". PHP_EOL;
+    }
     if ($input == 1){
         $device = $device1;
-        changeAmount($device, readline('Enter new amount: '));
-        printProducts($device);
+        $device->changeAmount($device, readline('Enter new amount: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 2){
         $device = $device1;
-        changePrice($device, readline('Enter new price: '));
-        printProducts($device);
+        $device->changePrice($device, readline('Enter new price: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 3){
         $device = $device2;
-        changeAmount($device, readline('Enter new amount: '));
-        printProducts($device);
+        $device->changeAmount($device, readline('Enter new amount: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 4){
         $device = $device2;
-        changePrice($device, readline('Enter new price: '));
-        printProducts($device);
+        $device->changePrice($device, readline('Enter new price: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 5){
         $device = $device3;
-        changeAmount($device, readline('Enter new amount: '));
-        printProducts($device);
+        $device->changeAmount($device, readline('Enter new amount: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 6){
         $device = $device3;
-        changePrice($device, readline('Enter new price: '));
-        printProducts($device);
+        $device->changePrice($device, readline('Enter new price: '));
+        $device->printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 7){
