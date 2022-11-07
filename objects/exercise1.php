@@ -10,7 +10,6 @@ class Product{
     }
     public function printProducts($object)
     {
-        $fruits = new Product('Banana', 1.2, 20);
         echo $object->name . ', price ' . $object->startPrice . ', ' . $object->amount . ' units';
     }
     public function changeAmount($object, $amount){
