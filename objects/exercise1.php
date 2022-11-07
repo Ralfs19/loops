@@ -1,5 +1,4 @@
 <?php
-
 class Product{
     public string $name;
     public float $startPrice;
@@ -22,13 +21,9 @@ class Product{
     }
 }
 
-
-
 $device1 = new Product('Logitech mouse', 70.00, 14);
 $device2 = new Product('iPhone 5s', 999.99, 3);
 $device3 = new Product('Epson EB-UO5', 440.46, 1);
-
-
 
 echo "To change amount [1] for {$device1->name} {$device1->startPrice} EURO {$device1->amount} amount " . PHP_EOL;
 echo "To change price [2] for {$device1->name} {$device1->startPrice} EURO {$device1->amount} amount " . PHP_EOL;
@@ -82,8 +77,4 @@ while (true){
         break;
     }
 
-
-
-
 }
-
