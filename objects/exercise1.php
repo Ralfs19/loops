@@ -39,39 +39,39 @@ echo 'To exit [7]' . PHP_EOL;
 while (true){
     $input = readline();
     if ($input == 1){
-        $a = $device1;
-        changeAmount($a, readline('Enter new amount: '));
-        printProducts($a);
+        $device = $device1;
+        changeAmount($device, readline('Enter new amount: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 2){
-        $a = $device1;
-        changePrice($a, readline('Enter new price: '));
-        printProducts($a);
+        $device = $device1;
+        changePrice($device, readline('Enter new price: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 3){
-        $a = $device2;
-        changeAmount($a, readline('Enter new amount: '));
-        printProducts($a);
+        $device = $device2;
+        changeAmount($device, readline('Enter new amount: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 4){
-        $a = $device2;
-        changePrice($a, readline('Enter new price: '));
-        printProducts($a);
+        $device = $device2;
+        changePrice($device, readline('Enter new price: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 5){
-        $a = $device3;
-        changeAmount($a, readline('Enter new amount: '));
-        printProducts($a);
+        $device = $device3;
+        changeAmount($device, readline('Enter new amount: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 6){
-        $a = $device3;
-        changePrice($a, readline('Enter new price: '));
-        printProducts($a);
+        $device = $device3;
+        changePrice($device, readline('Enter new price: '));
+        printProducts($device);
         echo PHP_EOL;
     }
     if ($input == 7){
