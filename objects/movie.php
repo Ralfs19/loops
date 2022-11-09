@@ -3,9 +3,9 @@
 require_once 'exercise4.php';
 
 $movies = [
-    new Movie('j', 'b', 'PG13'),
-    new Movie('l', 'h', 'PG13'),
-    new Movie('m', 'n', 'PG'),
+    new Movie('Casino Royale', 'Eon Productions', 'PG13'),
+    new Movie('Glass', 'Buena Vista International', 'PG13'),
+    new Movie('Spider-Man: Into the Spider-Verse', 'Columbia Pictures', 'PG'),
 ];
 
 $pgMovies = $movies[0];
