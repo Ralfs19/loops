@@ -21,7 +21,7 @@ class Movie
         $filtereMovies = [];
         foreach ($movies as $movie) {
             if ($movie->getRating() === 'PG') {
-                $filtereMovies[] = $movie;
+                 $filtereMovies[] = $movie;
             }
         }
         return $filtereMovies;
