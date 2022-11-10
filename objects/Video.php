@@ -30,7 +30,7 @@ class Video
     {
         $this->rating += $addRaiting;
     }
-    public function
+
 
 }
 
