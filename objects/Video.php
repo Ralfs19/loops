@@ -39,4 +39,5 @@ class Video
 }
 
 $video1 = new Video('New vid', false, 5);
+var_dump($video1);
 

@@ -4,13 +4,13 @@ class VideoStore
 {
 private Video $video;
 
-public function __construct(Video $video)
+public function __construct()
 {
-    $this->video = $video;
+
 }
 public function inventory()
 {
-    $this->video->addVideo();
+
 }
 
 }
