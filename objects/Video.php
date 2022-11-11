@@ -18,10 +18,6 @@ class Video
     {
         return $this->title;
     }
-    public function addVideo()
-    {
-
-    }
     public function check(): bool
     {
         return $this->checked;
@@ -36,7 +32,7 @@ class Video
     }
     public function returnVideo()
     {
-
+        
     }
 
 

@@ -8,9 +8,9 @@ public function __construct(Video $video)
 {
     $this->video = $video;
 }
-public function inventory(string $title)
+public function inventory(
 {
-    $this->video->addVideo($title);
+    $this->video->addVideo();
 }
 
 }
