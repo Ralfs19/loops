@@ -18,6 +18,10 @@ class Video
     {
         return $this->title;
     }
+    public function addVideo()
+    {
+
+    }
     public function check(): bool
     {
         return $this->checked;
@@ -30,9 +34,13 @@ class Video
     {
         $this->rating += $addRaiting;
     }
+    public function returnVideo()
+    {
+
+    }
 
 
 }
 
-$vv = new Video('New vid', false, 5);
-var_dump($vv->check());
+$video1 = new Video('New vid', false, 5);
+
